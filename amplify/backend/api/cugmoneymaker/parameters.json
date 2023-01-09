@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "cugmoneymaker",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authcugmoneymaker9df93c06",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
